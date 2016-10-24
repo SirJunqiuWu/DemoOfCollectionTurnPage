@@ -172,8 +172,10 @@ typedef NS_ENUM(NSInteger , TWDA03ShowType) {
 
 #pragma mark - UIScrollViewDelegate
 
+
 -(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
 {
+    //此处数值可以控制上拉或者下拉多少执行翻页动画
     if (showType == isHide && scrollView.contentOffset.y > 40)
     {
         /**
@@ -181,7 +183,7 @@ typedef NS_ENUM(NSInteger , TWDA03ShowType) {
          */
         [self exchangeState:YES];
     }
-    if (showType == isShow && scrollView.contentOffset.y < (self.view.height - 80))
+    if (showType == isShow && scrollView.contentOffset.y < (self.view.height - 160))
     {
         /**
          *  执行收回动效
