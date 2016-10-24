@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  DemoOfTurnPageVIew
+//
+//  Created by 吴 吴 on 16/10/20.
+//  Copyright © 2016年 JackWu. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "AppConfig.h"
+#import "AdditionFrameworks.h"
+
+#endif /* PrefixHeader_pch */
