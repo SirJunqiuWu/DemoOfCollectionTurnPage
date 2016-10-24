@@ -1,0 +1,2 @@
+# DemoOfCollectionTurnPage
+自定义UICollectionViewFlowLayout,利用UICollectionView的头部视图和瀑布流展现形式，上拉和下拉变换page的动画。类似淘宝商品详情页下拉显示另一页的商品信息动画。
